@@ -6,7 +6,7 @@ module.exports = {
     output: {
         path: path.resolve(__dirname, 'dist'),
         filename: 'bundle.js',
-        publicPath: '/'
+        publicPath: '/dist/'
     },
     module: {
 		rules: [
@@ -21,7 +21,7 @@ module.exports = {
 				}
             },
 			{
-                test: /\.scss$/,
+                test: /main.scss/,
                 exclude: /node_modules/,
                 use: [{
                     loader: "style-loader"

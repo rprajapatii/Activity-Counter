@@ -1,13 +1,12 @@
 import React from 'react';
 import ReactDom from 'react-dom';
-import { hello} from './lib';
-import './stylesheets/style.scss';
+import { SkiDayCount } from './components/skiDaysCount';
+import './stylesheets/main.scss';
 
 ReactDom.render(
-	<div>
-		<h1>Hello, world!</h1>
-		{hello}
-	</div>,
-	
+	<SkiDayCount total={50}
+				powder={20}
+				backcountry={10}
+				goal={100}/>,
 	document.getElementById('react-container')
 );

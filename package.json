@@ -4,7 +4,8 @@
   "description": "Inspired by react-js-essential-training course. Instructor: Eve Porcello",
   "main": "index.js",
   "scripts": {
-    "start": "webpack-dev-server --mode development"
+    "start": "webpack-dev-server --mode development",
+    "build": "./node_modules/.bin/webpack --mode production"
   },
   "author": "",
   "license": "ISC",

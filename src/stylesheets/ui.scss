@@ -82,7 +82,8 @@ div.ski-day-count {
   display: flex;
   flex-wrap: wrap;
   font-size: 3em;
-  height: calc(100% - 3em);
+  height: 100%;
+  // height: calc(100% - 3em);
 
   > div {
     display: flex;
@@ -103,7 +104,6 @@ div.ski-day-count {
     }
 
     span, svg {
-      background-color: white;
       height: 100px;
       display: flex;
       justify-content: center;
@@ -129,9 +129,10 @@ div.ski-day-count {
 
 div.ski-day-list {
 
-  height: calc(100% - 13em);
-  overflow-y: scroll;
-
+  max-height: calc(100% - 13em);
+  overflow-y: auto;
+  margin-bottom: 2em;
+  
   table {
     caption {
       background-color: white;

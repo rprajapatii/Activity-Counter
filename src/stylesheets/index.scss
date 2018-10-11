@@ -27,3 +27,12 @@ div.whoops-404 {
   align-items: center;
   flex-wrap: wrap;
 }
+
+body {
+  // color: #fff;
+  margin: 0 auto;
+  background: linear-gradient(
+    rgba(255, 0, 0, 0.45), 
+    rgba(255, 0, 0, 0.45)
+  ), url('../assets/img/bg.jpg') top center / cover no-repeat ;
+}

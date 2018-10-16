@@ -1,6 +1,7 @@
 import React from 'react';
-import * as MaterialDesign from 'react-icons/md'
-import * as Typicons from 'react-icons/ti'
+import * as MaterialDesign from 'react-icons/md';
+import * as Typicons from 'react-icons/ti';
+import PropTypes from 'prop-types';
 
 const percentToDecimal = (decimal) => {
     return ((decimal * 100) + '%');
@@ -37,3 +38,17 @@ export const SkiDayCount = ({total, powder, backcountry, goal}) => (
         </div>
     </div>
 )
+
+SkiDayCount.defaultProps = {
+    total: 0,
+    powder: 0, 
+    backcountry: 0, 
+    goal: 0
+};
+
+SkiDayCount.propTypes = {
+    total: PropTypes.number,
+    powder: PropTypes.number,
+    backcountry: PropTypes.number,
+    goal: PropTypes.number
+}

@@ -1,6 +1,7 @@
-import React from 'react'
-import * as MaterialDesign from 'react-icons/md'
-import * as Typicons from 'react-icons/ti'
+import React from 'react';
+import PropTypes from 'prop-types';
+import * as MaterialDesign from 'react-icons/md';
+import * as Typicons from 'react-icons/ti';
 
 export const SkiDayRow = ({resort, date, powder, backcountry}) => (
     <tr>
@@ -11,3 +12,10 @@ export const SkiDayRow = ({resort, date, powder, backcountry}) => (
         <td>{(backcountry) ? <Typicons.TiWeatherSnow />: null}</td>
     </tr>
 );
+
+SkiDayRow.PropTypes = {
+    date: PropTypes.instanceOf(Date).isRequired,
+    resort: PropTypes.string.isRequired,
+    powder: PropTypes.bool,
+    backcountry: PropTypes.bool
+}

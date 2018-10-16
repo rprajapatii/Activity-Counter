@@ -35,4 +35,33 @@ body {
     rgba(255, 0, 0, 0.45), 
     rgba(255, 0, 0, 0.45)
   ), url('../assets/img/bg.jpg') top center / cover no-repeat ;
+  display: flex;
+  justify-content: center;
+}
+
+#react-container{
+  display: flex;
+  width: 100%;
+}
+
+div.ski-day-list{
+  align-self: center;
+  width: 100%;
+}
+
+table{
+  th{
+    padding: 1em;
+  }
+}
+
+div.ski-day-list table td{
+  padding: 0.5em;
+}
+
+
+@media all and (min-width: 960px){
+  #react-container{
+    width: 700px;
+  }
 }
